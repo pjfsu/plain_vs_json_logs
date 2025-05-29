@@ -1,0 +1,29 @@
+import logging
+from flask import Flask, request
+
+app = Flask(__name__)
+
+log_file = "plain.log"
+file_handler = logging.FileHandler(log_file)
+
+app.logger.addHandler(file_handler)  # Logs to file
+app.logger.setLevel(logging.INFO)
+
+@app.route('/info')
+def test_200():
+    app.logger.info("Request successful", extra={"status_code": 200})
+    return "OK", 200
+
+@app.route('/warning')
+def test_400():
+    app.logger.warning("Client made a bad request", extra={"status_code": 400})
+    return "Bad Request", 400
+
+@app.route('/error')
+def test_500():
+    app.logger.error("Server encountered an error", extra={"status_code": 500})
+    return "Internal Server Error", 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
