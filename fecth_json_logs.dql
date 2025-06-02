@@ -1,0 +1,3 @@
+fetch logs
+| filter matchesValue(log.source, "*json.log*")
+| sort timestamp desc
