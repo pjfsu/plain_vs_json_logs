@@ -130,3 +130,5 @@ Both variants expose identical endpoints (`/info`, `/warning`, and `/error`) tha
   The clear separation of log attributes reduces the need for manual string parsing and allows for more straightforward troubleshooting.
 - **Efficient Data Processing:**  
   Filtering, sorting, and aggregating log data become more efficient as each log entry adheres to a standardized JSON format.
+
+## EOR (End Of Repo)
