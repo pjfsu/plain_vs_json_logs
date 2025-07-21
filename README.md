@@ -131,4 +131,9 @@ Both variants expose identical endpoints (`/info`, `/warning`, and `/error`) tha
 - **Efficient Data Processing:**  
   Filtering, sorting, and aggregating log data become more efficient as each log entry adheres to a standardized JSON format.
 
-## EOR (End Of Repo)
+
+## EOR (END OF REPOSITORY)
+
+### Moitas grazas por ler iste README\.md !!!
+### Muchas gracias por leer este README\.md !!!
+### Thanks you very much for reading this README\.md !!!
